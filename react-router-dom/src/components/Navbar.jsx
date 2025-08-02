@@ -1,7 +1,10 @@
 import logo from "../assets/image.png";
-import { Link } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div className="navbar">
       <div className="logo">
@@ -9,20 +12,23 @@ const Navbar = () => {
         <h1>router</h1>
       </div>
       <ul>
-        <Link to="/">
+        <NavLink to="/">
           <li>Home</li>
-        </Link>
-        <Link to="/products">
+        </NavLink>
+        <NavLink to="/products">
           <li>Products</li>
-        </Link>
-        <Link to="/about">
+        </NavLink>
+        <NavLink to="/about">
           <li>About</li>
-        </Link>
-        <Link to="/contact">
+        </NavLink>
+        <NavLink to="/contact">
           <li>Contact</li>
-        </Link>
+        </NavLink>
+        <NavLink to="/jobs">
+        <li>Jobs</li>
+        </NavLink>
       </ul>
-      <button>Get Started</button>
+      <button onClick={()=>navigate("/jobs",{replace:true})} >Get Started</button>
     </div>
   );
 };
