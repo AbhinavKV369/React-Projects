@@ -1,0 +1,31 @@
+/* For background image or video */
+.background {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    /* make it stick behind everything */
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* For YouTube iframe video background */
+.video-container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.video-container iframe {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    border: none;
+    pointer-events: none;
+    /* disable interaction with video */
+}

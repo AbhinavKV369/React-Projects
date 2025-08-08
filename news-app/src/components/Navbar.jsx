@@ -3,12 +3,15 @@ import React from 'react'
 const Navbar = ({setCategory}) => {
   return (
     <nav
-      className="navbar navbar-expand-lg bg-body-tertiary"
+      className="navbar navbar-expand-lg p-3 bg-body-tertiary fw-bold"
       data-bs-theme="dark">
       <div className="container-fluid">
-        <a className="navbar-brand fw-bold" href="#">
+        <a
+          className="navbar-brand fw-bold p-2 bg-black border border-2 border-danger rounded"
+          href="#">
           News-App
         </a>
+
         <button
           className="navbar-toggler"
           type="button"
