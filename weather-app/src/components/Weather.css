@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+h1{
+  font-family: "Outfit", sans-serif;
+}
+.weather{
+    place-self: center;
+    padding: 40px;
+    border-radius: 10px;  
+    background: linear-gradient(90deg, rgba(73, 85, 87, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(7, 44, 144, 1) 38%, rgba(0, 212, 255, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search-bar{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.search-bar input{
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  padding: 20px;
+  background: rgb(228, 224, 232);
+}
+.search-bar img{
+  width: 50px;
+  padding: 15px;
+  border-radius: 50%;
+  background: rgb(239, 230, 230);
+  cursor: pointer;
+}
+.weather-image{
+  width: 150px;
+  margin-top: 20px;
+}
+p{
+  font-size: 1.5rem;
+  line-height: 1;
+  color: antiquewhite;
+}
+.temprature{
+  color: antiquewhite;
+}
+.row{
+  display: flex;
+  margin-top: 10px;
+}
+.row img{
+  width: 100px;
+}
