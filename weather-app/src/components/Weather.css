@@ -3,6 +3,9 @@
 h1{
   font-family: "Outfit", sans-serif;
 }
+h2{
+  color: aliceblue;
+}
 .weather{
     place-self: center;
     padding: 40px;
@@ -34,20 +37,37 @@ h1{
 }
 .weather-image{
   width: 150px;
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 p{
   font-size: 1.5rem;
   line-height: 1;
   color: antiquewhite;
+  margin-top: 10px;
 }
 .temprature{
   color: antiquewhite;
 }
 .row{
   display: flex;
-  margin-top: 10px;
+  margin-top: 20px;
+  justify-content: space-between;
+  gap:30px;
 }
 .row img{
-  width: 100px;
+  width: 60px;
+}
+.row p {
+  font-size: 15px;
+}
+.row .humidity{
+  display: flex;
+  align-items: center;
+  gap:6px;
+}
+.row .wind-speed{
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
